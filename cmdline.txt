@@ -1,0 +1,64 @@
+20 command line
+
+1. cmd
+untuk mengetahui versi dari windows yang sedang kita gunakan
+
+2. cd
+perintah untuk memasuki folder yang sedang aktif
+
+3. bcdboot
+digunakan untuk membuat partisi sistem secara cepat selain itu juga bisa digunakan untuk memperbaiki partisi yng digunakan untuk boot sistem
+
+4. chkdsk
+untuk mengetahui kondisi/informasi rinci sebuah drive seperti format yang digunakan, kapasitas total, jumlah file, bad sectors dsb
+
+5. color
+untuk merubah tampilan warna pada command prompt
+
+6. break
+untuk enable/disable pada proses ms-dos yang biasanya menggunakan kombinasi ctrl + c
+
+7. attrib
+untuk melihat keseluruhan file yang dalam kondisi read only, hidden dsb selain itu dapat digunakan untuk menambah/mengurangi atribut pada file seperti read only, hidden, archive dan system
+
+8. date
+untuk menampilkan tanggal saat ini
+
+9. help
+untuk menampilkan beberapa perintah serta fungsi spesifiknya
+
+10. ping
+digunakan untuk mengetes response time jaringan pada website tertentu
+
+11. ipconfig
+untuk menampilkan pengaturan jaringan seperti IP address, dns server dsb
+
+12. exit
+perintah untuk menutup command prompt
+
+13. shutdown
+fungsi untuk mematikan komputer
+
+14. defrag
+perintah yang digunakan untuk melakukan optimalisasi pada hard drive
+
+15. chdir
+merupakan fungsi untuk navigasi direktori yang ada pada hard drive
+
+16. diskpart
+perintah untuk mengelola partisi yang telah dibuat pada hard drive
+
+17. append
+untuk membuka file yang ada pada suatu direktori meskipun kita sedang tidak pada direktori tersebut
+
+18. copy
+untuk menyalin file
+
+19. convert
+untuk mengubah tipe partisi seperti FAT menjadi NTFS
+
+20. cls
+digunakan untuk menghilangkan histroy perintah yang sebelumnya telah dilakukan pada cmd
+
+
+
