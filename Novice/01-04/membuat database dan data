@@ -1,0 +1,12 @@
+Menyiapkan Database:
+ - Membuat model
+ - Men-generate migration
+ - menjalankan migration
+ 
+mengambil Data
+ -Import model
+ -Ambil data melalui model
+ 
+mengirim/membuat data:
+ - Template, buat form dgn method POST, action kosong "", tambah crsf_token
+ - Di views meemriksa apakah terjadi POST, jika benar maka simpan data dari POST tersebut
