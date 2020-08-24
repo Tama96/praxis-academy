@@ -1,0 +1,4 @@
+Variable = wadah
+Fungsi = sekumpulan aktivitas sifatnya callable (bisa dipanggil)
+Class = bentuk abstrak/blueprint
+_init_ = merupakan initiator/constructor saat ada object
