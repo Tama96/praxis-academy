@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+    }
+    td, th {
+        text-align: left;
+        padding: 5px;
+    }
+    tr {
+        border: 1px solid #29fffb;
+        text-align: left;
+    }
+    .center {
+        margin: auto;
+        width: 60%;
+        border: 3px solid #73AD21;
+        padding: 10px;
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token%}
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Nama</th>
+        </tr> 
+        <tr>
+          <td>{{data.id}}</td>
+          <td>
+              <input type="text" name="name" value="{{data.Task}}">
+          </td>
+        </tr>
+      </table>
+      <button>Simpan</button>
+      </form>
+</body>
+</html>
+</body>
