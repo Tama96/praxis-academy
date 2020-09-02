@@ -1,0 +1,6 @@
+Django postgresql:
+- start PG server
+- atur koneksi ke PG di file settings.py
+- install driver dengan "python -m pip install psycopg2"
+- jalankan migrasi dengan "... migrate"
+- jalankan aplikasi dengan "... runserver"
