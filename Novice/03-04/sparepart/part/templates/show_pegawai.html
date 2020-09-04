@@ -14,11 +14,14 @@
     <thead class="thead-light">
     <tr>
         <center><h3>Data Pegawai CV. Jaya Abadi</h3></center>
+        <br>
+        <center><a href="/home" class="btn btn-primary">Add New Record</a></center><a href="/" class="btn btn-warning">Back</a>  
     </tr>
     <br>  
     <tr>  
         <th>NIK</th>  
-        <th>Nama</th>   
+        <th>Nama</th>
+        <th>Actions</th>   
     </tr>  
     </thead>  
     <tbody>  
@@ -27,15 +30,12 @@
         <td>{{ d.nik }}</td>  
         <td>{{ d.nama }}</td>  
         <td>  
-            <a href="/edit2/{{ d.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
-            <a href="/delete2/{{ d.id }}">Delete</a>  
+            <a href="/edit_pegawai/{{ d.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>  
+            <a href="/delete_pegawai/{{ d.id }}">Dibusak</a>  
         </td>  
     </tr>  
 {% endfor %}  
     </tbody>  
 </table>  
-<br>  
-<br>  
-<center><a href="/emp" class="btn btn-primary">Add New Record</a></center>  
 </body>  
 </html>  

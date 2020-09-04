@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from part.forms import sukucadangForm
+from part.forms import sukucadangForm, pekerjaForm
 from part.models import Sukucadang
-from part.models import Employee
+from part.models import Pekerja
 
 # from Sukucadang
 
@@ -44,37 +44,44 @@ def destroy(request, id):
 # from Employee
 
 def home(request):
+    form = pekerjaForm()
     if request.method == "POST":  
         form = pekerjaForm(request.POST)  
         if form.is_valid():  
             try:  
                 form.save()  
-                return redirect('/show2')  
+                return redirect('/show_pegawai')  
             except:  
                 pass  
-    else:  
-        form = sukucadangForm()  
     return render(request,'home.html',{'form':form})
-def show2(request):
+def show_pegawai(request):
     datas = Pekerja.objects.all()
-    return render(request, "show2.html", {
+    return render(request, "show_pegawai.html", {
         'datas': datas
     })
-def edit2(request, id):
+def edit_pegawai(request, id):
     data = Pekerja.objects.get(id=id)
-    return render(request, 'edit2.html', {
+    return render(request, 'edit_pegawai.html', {
         'data': data
     })
-def update2(request, id):
+def update_pegawai(request, id):
     data = Pekerja.objects.get(id=id)
     form = pekerjaForm(request.POST, instance = data)
     if form.is_valid():  
         form.save()  
-        return redirect("/show2")  
-    return render(request, 'edit2.html', {
+        return redirect("/show_pegawai")  
+    return render(request, 'edit_pegawai.html', {
         'data': data
     })  
-def destroy2(request, id):
+def destroy_pegawai(request, id):
     data = Pekerja.objects.get(id=id)
     data.delete()
-    return redirect("/show2")
+    return redirect("/show_pegawai")
+
+# menu view
+
+def menu(request):
+    data = Pekerja.objects.all()
+    return render(request, "menu.html", {
+        'data': data
+    })

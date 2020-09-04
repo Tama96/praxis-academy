@@ -1,5 +1,5 @@
 from django import forms 
-from part.models import Sukucadang
+from part.models import Sukucadang,Pekerja
 
 class sukucadangForm(forms.ModelForm): 
     class Meta:  

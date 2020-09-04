@@ -12,8 +12,10 @@ urlpatterns = [
     path('delete/<int:id>', views.destroy),
     # from Pekerja
     path('home', views.home),
-    path('show2', views.show2),
-    path('edit2/<int:id>', views.edit2),  
-    path('update2/<int:id>', views.update2),  
-    path('delete2/<int:id>', views.destroy2),  
+    path('show_pegawai', views.show_pegawai),
+    path('edit_pegawai/<int:id>', views.edit_pegawai),  
+    path('update_pegawai/<int:id>', views.update_pegawai),  
+    path('delete_pegawai/<int:id>', views.destroy_pegawai),
+    # front page
+    path('', views.menu),  
 ]
