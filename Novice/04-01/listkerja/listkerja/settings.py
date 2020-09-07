@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'list',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -69,8 +68,6 @@ TEMPLATES = [
     },
 ]
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
 WSGI_APPLICATION = 'listkerja.wsgi.application'
 
 
@@ -79,10 +76,8 @@ WSGI_APPLICATION = 'listkerja.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'list',
-        'USER' : 'tama',
-        'PASSWORD' : 'tama',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 

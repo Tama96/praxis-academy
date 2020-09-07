@@ -24,11 +24,9 @@
 </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Edit</title>
+    <title>Detail</title>
 </head>
 <body>
-    <form action="" method="POST">
-        {% csrf_token%}
     <table>
         <tr>
             <th>Id</th>
@@ -36,13 +34,9 @@
         </tr> 
         <tr>
           <td>{{data.id}}</td>
-          <td>
-              <input type="text" name="name" value="{{data.Task}}">
-          </td>
+          <td>{{data.Task}}</td>
         </tr>
-    </table>
-      <button>Simpan</button>
-    </form>
+      </table>
 </body>
 </html>
 </body>

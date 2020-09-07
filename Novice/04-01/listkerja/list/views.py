@@ -1,20 +1,20 @@
 from django.shortcuts import render, redirect
-from .forms import listForm
-from list.models import Tugas
+from list.forms import listForm
+
+
+
 from . import models
 
 def index(req):
     form = listForm()
-    if req.method == 'POST':
-        form = listForm(req.POST)
-        if form.is_valid():
-            try:
-                form.save()
-                return redirect('/')
-            except:
-                pass
+    if req.POST:
+        print(req.POST)
+        models.Tugas.objects.create(Task=req.POST['name'])
+
     data = models.Tugas.objects.all()
-    return render(req, 'list/index.html', {'form':form,'data':data})
+    return render(req, 'list/index.html', {
+        'data': data,
+    })
 
 def detail(req, id):
     data = models.Tugas.objects.filter(pk=id).first()
