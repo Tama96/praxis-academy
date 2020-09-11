@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'pengguna',
-    'accounts',
     'django_filters',
 
 
@@ -129,8 +128,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/images/'
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
-]
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
+LOGIN_REDIRECT_URL = '/'
