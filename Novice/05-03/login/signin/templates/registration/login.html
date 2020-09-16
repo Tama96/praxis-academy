@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<p>Silahkan melakukan login dengan data valid anda</p>
+
+<form action="" method="post" novalidate>
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <p><input type="submit" value="Login"></p>
+
+</form>
+
+</body>
+</html>
