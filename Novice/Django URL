@@ -1,7 +1,0 @@
-Django URL with parameter:
- - menambah URL, path(' <id>/', views.detail)
- - membuat fungsi detail di views
- 	= mengambil task berdasarkan id yang masuk
- 	= merender template detail dengan memberi data task
- - membuat template detail.html
- 	= menampilkan data task
