@@ -1,13 +1,18 @@
 from django.shortcuts import render
-from django.http import JsonResponse
+from rest_framework import viewsets
+from .models import Pekerjaan
+from .serializers import PekerjaanSerializer
 # Create your views here.
 
-def index(request):
-    comments = [
-        {'nama' : 'Joko Kendil',
-        'motto' : 'Royco'},
-        {'nama' : 'Surya Piningit',
-        'motto' : 'Masako'}
-    ]
+class PekerjaanView(viewsets.ModelViewSet):
+    serializer_class = PekerjaanSerializer
+    queryset = Pekerjaan.objects.all()
+#def index(request):
+    #comments = [
+        #{'nama' : 'Joko Kendil',
+        #'motto' : 'Royco'},
+        #{'nama' : 'Surya Piningit',
+        #'motto' : 'Masako'}
+    #]
 
-    return JsonResponse(comments, safe=False)
+    #return JsonResponse(comments, safe=False)
